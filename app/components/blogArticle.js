@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function BlogArticle({ article }) {
-  
+
   return (
     <>
       <div key={article.id}>
@@ -15,8 +15,11 @@ export default function BlogArticle({ article }) {
           <p>Published Date: {article.date} </p><br />
           <p>Tags: {article.tags}</p>
           <hr />
-          <p>{article.description}</p>
-        </div>  
+          <p>{article.properties.Description.rich_text[0].plain_text}</p>
+        </div>
+        <div>
+          <Link href="/blog/[id]" as={`/blog/${article.id}`} ><a>Read more</a></Link>
+        </div>
       </div>
     </>
   );
