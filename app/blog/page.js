@@ -6,6 +6,7 @@ export default function Blog({ articles }) {
   return (
     <main>
       <div><h1>Blog Articles</h1></div>
+      <hr />
       <div>{articles.map((article) => {
         <BlogArticle article={article} />
       })}</div>

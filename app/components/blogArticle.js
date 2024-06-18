@@ -10,10 +10,10 @@ export default function BlogArticle({ article }) {
       <div key={article.id}>
         <div><Image src={} alt="Blog Cover" /></div>
         <div>
-          <h2>{article.title}</h2>
+          <h2>{article.properties.Name.title[0].plain_text}</h2>
           <hr />
-          <p>Published Date: {article.date} </p><br />
-          <p>Tags: {article.tags}</p>
+          <p>Published Date: {article.last_edited_time} </p><br />
+          <p>Tags: {article.properties.Tags.name}</p>
           <hr />
           <p>{article.properties.Description.rich_text[0].plain_text}</p>
         </div>

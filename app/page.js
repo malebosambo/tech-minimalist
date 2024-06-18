@@ -10,9 +10,9 @@ export default function Home({ articles }) {
       <div>
       
       </div>
-      <div>{articles.map((article) => {
-        <BlogArticle article={article} />
-      })}</div>
+      <div className="TrendingPosts">
+        
+      </div>
       <div className="Newsletter">
         <form method="POST" action="() => {}" >
           <input name="fullname" type="text" />
@@ -20,7 +20,15 @@ export default function Home({ articles }) {
           <button>Subscribe</button>
         </form>
       </div>
-      
+       <div>{articles.map((article) => {
+        <BlogArticle article={article} />
+      })}</div>
+      <div className="Authors">
+        <h1>Know your author</h1>
+        <div>
+        
+        </div>
+      </div>
       
     </main>
   );

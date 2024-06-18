@@ -12,7 +12,7 @@ export default function Article({ article }) {
     <main>
       <div><Image src={} alt="Coverphoto for the blog post" /></div>
       <div>
-        <h1>{article.title}</h1>
+        <h1>{article.properties.Name.title[0].plain_text}</h1>
         <hr />
         <p>`Published Date: ${article.last_edited_time}`</p><span className="Whitespace"></span>
         <p>{article.properties.Tags.select.name}</p>
