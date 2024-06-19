@@ -1,4 +1,5 @@
 import { getDatabase } from '../lib/notion';
+import { subscribe } from '../lib/actions';
 import BlogArticle from './components/blogArticle';
 import Image from 'next/image';
 import styles from './page.module.css';
@@ -14,7 +15,7 @@ export default function Home({ articles }) {
         
       </div>
       <div className="Newsletter">
-        <form method="POST" action="() => {}" >
+        <form action={subscribe()} >
           <input name="fullname" type="text" />
           <input name="email" type="email" />
           <button>Subscribe</button>
