@@ -15,7 +15,7 @@ export default function Home({ articles }) {
         
       </div>
       <div className="Newsletter">
-        <form action={subscribe()} >
+        <form action={subscribe} >
           <input name="fullname" type="text" />
           <input name="email" type="email" />
           <button>Subscribe</button>
@@ -27,7 +27,8 @@ export default function Home({ articles }) {
       <div className="Authors">
         <h1>Know your author</h1>
         <div>
-        
+          <Image src="" alt="Authors Avatar" />
+          <h3>Malebo Sambo</h3>
         </div>
       </div>
       
