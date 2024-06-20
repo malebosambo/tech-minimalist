@@ -36,7 +36,7 @@ export default function Home({ articles }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const articles = await getDatabase();
   
   return {

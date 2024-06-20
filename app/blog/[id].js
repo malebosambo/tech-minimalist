@@ -23,7 +23,7 @@ export default function Article({ article }) {
   );
 }
 
-export async function getStaticProps(postID) {
+export async function getServerSideProps(postID) {
   
   const article = await getPage(postID);
   
