@@ -8,7 +8,7 @@ export default function header() {
     <>
       <div>
         <Image src="" alt="Tech Minimalist Logo" />
-        <button>X</button>
+        <button>Menu</button>
       </div>
       <div>
         {Navigation}

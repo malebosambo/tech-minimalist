@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -13,7 +11,9 @@ export default function BlogArticle({ article }) {
           <h2>{article.properties.Name.title[0].plain_text}</h2>
           <hr />
           <p>Published Date: {article.last_edited_time} </p><br />
-          <p>Tags: {article.properties.Tags.name}</p>
+          <p>Tags:</p>
+          <ul>{article.properties.Tags.select.map((tag) => <li>{name}</li>)}</ul>
+          <p>{article.properties.Author.people[0].name}</p>
           <hr />
           <p>{article.properties.Description.rich_text[0].plain_text}</p>
         </div>

@@ -17,9 +17,5 @@ const responsive = {
 };
 
 <Carousel responsive={responsive}>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  
 </Carousel>;

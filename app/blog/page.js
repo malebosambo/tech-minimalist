@@ -1,10 +1,10 @@
 import { getDatabase } from '../../lib/notion';
 import BlogArticle from '../components/blogArticle';
 
-export default function Blog({ articles }) {
+export default function Blog() {
   
   return (
-    <main>
+    <main className="BlogList">
       <div><h1>Blog Articles</h1></div>
       <hr />
       <div>{articles.map((article) => {
@@ -12,14 +12,4 @@ export default function Blog({ articles }) {
       })}</div>
     </main>
   );  
-}
-
-export async function getServerSideProps() {
-  const articles = await getDatabase();
-  
-  return {
-    props: {
-      articles
-    }
-  }
 }

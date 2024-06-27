@@ -9,7 +9,7 @@ export default function Article({ article }) {
   const postID = router.query.id;
   
   return (
-    <main>
+    <main className="BlogArticle">
       <div><Image src={} alt="Coverphoto for the blog post" /></div>
       <div>
         <h1>{article.properties.Name.title[0].plain_text}</h1>
@@ -21,13 +21,4 @@ export default function Article({ article }) {
       </div>
     </main>
   );
-}
-
-export async function getServerSideProps(postID) {
-  
-  const article = await getPage(postID);
-  
-  return {
-    props: { article }
-  }
 }
