@@ -7,6 +7,7 @@ export default function Blog() {
     <main className="BlogList">
       <div><h1>Blog Articles</h1></div>
       <hr />
+      <div></div>
       <div>{articles.map((article) => {
         <BlogArticle article={article} />
       })}</div>

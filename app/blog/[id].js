@@ -17,6 +17,7 @@ export default function Article({ article }) {
         <p>`Published Date: ${article.last_edited_time}`</p><span className="Whitespace"></span>
         <p>{article.properties.Tags.select.name}</p>
         <hr />
+        <div></div>
         <p></p>
       </div>
     </main>
