@@ -6,29 +6,25 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function header() {
-  const [ menu, setMenu ] = useState(false);
   
-  const mobileMenu = () => {
-    if (menu) {
-      setMenu(!menu);
-      const navIsMobile = "Nav";
-      return navIsMobile;
-    } else {
-      setMenu(!menu);
-      const navIsMobile = "Nav Mobile";
-      return navIsMobile;
-    }
-  }
+  const [ mobileMenu, setMobileMenu ] = useState(false);
+
+  const showMenu = () => setMobileMenu(!mobileMenu);  
   
   return (
-    <>
-      <div>
-        <Link href="/"><a><Image src="/public/Tech-Minimalist-Logo.jpeg" alt="Tech Minimalist Logo" /></a></Link>
-        <button onClick={mobileMenu} className="Mobile_Menu">Menu</button>
+    <div className="Header">
+      <div className="Logo">
+        <div>
+          <Link href="/"><a><Image src="/public/Tech-Minimalist-Logo.jpeg" alt="Tech Minimalist Logo" /></a></Link>
+        </div>
+        <div className="Mobile-Menu" style={{padding: "20px"}}>
+          <button onClick={showMenu} className={ !mobileMenu ? "" : "Menu" }>=</button>
+          <button onClick={showMenu} className={ mobileMenu ? "" : "Menu" }>X</button>
+        </div>
+      </div>  
+      <div className={ mobileMenu ? "Menu-Visible" : "Menu" }>
+        <Navigation />
       </div>
-      <div className={navIsMobile}>
-        {Navigation}
-      </div>
-    </>
+    </div>
   );
 }

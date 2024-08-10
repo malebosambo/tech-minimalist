@@ -1,7 +1,6 @@
 import { getDatabase } from '../lib/notion';
 import { subscribe } from '../lib/actions';
 import BlogArticle from './components/blogArticle';
-
 import Newsletter from './components/newsletter';
 import SocialLinks from './components/socialLinks';
 import ArticleTags from './components/postArticleTags';
