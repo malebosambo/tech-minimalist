@@ -1,8 +1,8 @@
 import { getDatabase } from '../lib/notion';
 import { subscribe } from '../lib/actions';
 import BlogArticle from './components/blogArticle';
-import Carousel from './components/carousel';
-import Newsletter from './components/newsletterForm';
+
+import Newsletter from './components/newsletter';
 import SocialLinks from './components/socialLinks';
 import ArticleTags from './components/postArticleTags';
 import Image from 'next/image';
@@ -21,7 +21,7 @@ export default function Home() {
       
       <div className="TrendingPosts">
         <h1>Trending Posts</h1><br />
-        <Carousel />
+        
       </div>
       
       <div className="Newsletter">

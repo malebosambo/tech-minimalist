@@ -6,7 +6,7 @@ export default function BlogArticle({ article }) {
   return (
     <>
       <div key={article.id}>
-        <div><Image src={} alt="Blog Cover" /></div>
+        <div><Image src="" alt="Blog Cover" /></div>
         <div>
           <h2>{article.properties.Name.title[0].plain_text}</h2>
           <hr />
