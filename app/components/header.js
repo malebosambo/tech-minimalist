@@ -15,7 +15,7 @@ export default function header() {
     <div className="Header">
       <div className="Logo">
         <div>
-          <Link href="/"><a><Image src="/public/Tech-Minimalist-Logo.jpeg" alt="Tech Minimalist Logo" /></a></Link>
+          <Link href="/"><Image src="/public/Tech-Minimalist-Logo.jpeg" alt="Tech Minimalist Logo" /></Link>
         </div>
         <div className="Mobile-Menu" style={{padding: "20px"}}>
           <button onClick={showMenu} className={ !mobileMenu ? "" : "Menu" }>=</button>
