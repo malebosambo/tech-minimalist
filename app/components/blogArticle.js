@@ -18,7 +18,7 @@ export default function BlogArticle({ article }) {
           <p>{article.properties.Description.rich_text[0].plain_text}</p>
         </div>
         <div>
-          <Link href="/blog/[id]" as={`/blog/${article.id}`} ><a>Read more</a></Link>
+          <Link href="/blog/[id]" as={`/blog/${article.id}`} >Read more</Link>
         </div>
       </div>
     </>
