@@ -15,7 +15,7 @@ export default function Home() {
       <div className="LatestPost">
         <h1>Cloud Cybersecurity</h1><br />
         <p>The cloud and cloud-based workloads have become an increasing dominant player in the ICT industry and becoming a major preference for many businesses, organizations, governments and the ICT community. In addition to the increase in cloud adoption and migration, there has been a parallel increase in cybersecurity activities posing a great threat for cloud service providers, their partners and cloud customers in regards to their data, identities, finances and reputation.</p><br />
-        <Link href="/blog/cloud-cybersecurity"><a>Read more</a></Link>
+        <Link href="/blog/cloud-cybersecurity">Read more</Link>
       </div>
       
       <div className="TrendingPosts">
@@ -44,7 +44,7 @@ export default function Home() {
       <div className="JoinTeam">
         <h2>Invitation to join the team</h2>
         <p>We are inviting anyone from the ICT sector interested in writing or podcasting.</p>
-        <Link href="./team/join"><a>Join Team</a></Link>
+        <Link href="./team/join">Join Team</Link>
       </div>
       
       <div className="BlogArticleTagFilter">
