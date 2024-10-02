@@ -31,7 +31,7 @@ export default function Home() {
       </div>
       
        <div className="PostsGallery">{articles.map((article) => {
-        <BlogArticle article={article} />
+        <BlogArticle id={article.id} title={article.title} description={article.description} postDate={article.date} tags={article.tags} />
       })}</div>
       
       <div className="Authors">
