@@ -7,6 +7,7 @@ import ArticleTags from './components/postArticleTags';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
+import PostArticleTags from './components/postArticleTags';
 
 export default function Home() {
 
@@ -30,8 +31,8 @@ export default function Home() {
         <div><Newsletter subscribe={subscribe} /></div>
       </div>
       
-       <div className="PostsGallery">{articles.map((article) => {
-        <BlogArticle id={article.id} title={article.title} description={article.description} postDate={article.date} tags={article.tags} />
+       <div className="PostsGallery">{articles.results.map((article) => {
+        <BlogArticle article={article} />
       })}</div>
       
       <div className="Authors">
