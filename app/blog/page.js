@@ -1,9 +1,9 @@
 import { getDatabase } from '../../lib/notion';
 import BlogArticle from '../components/blogArticle';
 
-export default function Blog() {
+export default async function Blog() {
   
-  const articles = getDatabase();
+  const articles = await getDatabase();
 
   return (
     <main className="BlogList">
