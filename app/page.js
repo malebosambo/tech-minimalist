@@ -9,9 +9,9 @@ import Link from 'next/link';
 import styles from './page.module.css';
 import PostArticleTags from './components/postArticleTags';
 
-export default function Home() {
+export default async function Home() {
 
-  const articles = getDatabase();
+  const articles = await getDatabase();
   
   return (
     <main className={styles.main}>
