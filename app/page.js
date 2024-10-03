@@ -31,9 +31,7 @@ export default async function Home() {
         <div><Newsletter subscribe={subscribe} /></div>
       </div>
       
-       <div className="PostsGallery">{articles.results.map((article) => {
-        <BlogArticle article={article} />
-      })}</div>
+       <div className="PostsGallery"></div>
       
       <div className="Authors">
         <h1>Know your author</h1><br />
