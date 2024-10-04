@@ -10,9 +10,7 @@ export default async function Blog() {
       <div><h1>Blog Articles</h1></div>
       <hr />
       <div></div>
-      <div>{articles.results.map((article) => {
-        <BlogArticle article={article} />
-      })}</div>
+      <div></div>
     </main>
   );  
 }
