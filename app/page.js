@@ -1,4 +1,4 @@
-import { getDatabase } from '../lib/notion';
+
 import { subscribe } from '../lib/actions';
 import BlogArticle from './components/blogArticle';
 import Newsletter from './components/newsletter';
@@ -11,17 +11,17 @@ import PostArticleTags from './components/postArticleTags';
 
 export default async function Home() {
 
-  const articles = await getDatabase();
+  
   
   return (
-    <main className={styles.main}>
-      <div className="LatestPost">
+    <main className="Home">
+      <div className="Latest_Post">
         <h1>Cloud Cybersecurity</h1><br />
         <p>The cloud and cloud-based workloads have become an increasing dominant player in the ICT industry and becoming a major preference for many businesses, organizations, governments and the ICT community. In addition to the increase in cloud adoption and migration, there has been a parallel increase in cybersecurity activities posing a great threat for cloud service providers, their partners and cloud customers in regards to their data, identities, finances and reputation.</p><br />
         <Link href="/blog/cloud-cybersecurity">Read more</Link>
       </div>
       
-      <div className="TrendingPosts">
+      <div className="Trending_Posts">
         <h1>Trending Posts</h1><br />
         
       </div>
@@ -31,7 +31,7 @@ export default async function Home() {
         <div><Newsletter subscribe={subscribe} /></div>
       </div>
       
-       <div className="PostsGallery"></div>
+       <div className="Posts_Gallery"></div>
       
       <div className="Authors">
         <h1>Know your author</h1><br />
@@ -42,13 +42,13 @@ export default async function Home() {
         </div>
       </div>
       
-      <div className="JoinTeam">
+      <div className="Join_Team">
         <h2>Invitation to join the team</h2>
         <p>We are inviting anyone from the ICT sector interested in writing or podcasting.</p>
         <Link href="./team/join">Join Team</Link>
       </div>
       
-      <div className="BlogArticleTagFilter">
+      <div className="Blog_Article_Tag_Filter">
         <ArticleTags />
       </div>
     </main>
