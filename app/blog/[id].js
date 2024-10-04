@@ -10,7 +10,7 @@ export default function Article({ article }) {
   
   return (
     <main className="BlogArticle">
-      <div><Image src={} alt="Coverphoto for the blog post" /></div>
+      <div><Image src="" alt="Coverphoto for the blog post" /></div>
       <div>
         <h1>{article.properties.Name.title[0].plain_text}</h1>
         <hr />

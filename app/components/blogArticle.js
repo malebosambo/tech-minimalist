@@ -12,7 +12,7 @@ export default function BlogArticle({ article }) {
           <hr />
           <p>Published Date: {article.last_edited_time} </p><br />
           <p>Tags:</p>
-          <ul>{article.properties.Tags.select.map((tag) => <li>{name}</li>)}</ul>
+          <ul>{article.properties.Tags.select.map((tag) => <li key={tag}>{name}</li>)}</ul>
           <p>{article.properties.Author.people[0].name}</p>
           <hr />
           <p>{article.properties.Description.rich_text[0].plain_text}</p>
