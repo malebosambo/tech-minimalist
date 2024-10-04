@@ -1,4 +1,4 @@
-
+import { getDatabase } from '../lib/notion';
 import { subscribe } from '../lib/actions';
 import BlogArticle from './components/blogArticle';
 import Newsletter from './components/newsletter';
@@ -11,7 +11,7 @@ import PostArticleTags from './components/postArticleTags';
 
 export default async function Home() {
 
-  
+  const articles = await getDatabase();
   
   return (
     <main className="Home">
@@ -23,7 +23,8 @@ export default async function Home() {
       
       <div className="Trending_Posts">
         <h1>Trending Posts</h1><br />
-        
+        <div>{articles.results.map(article => {<BlogArticle article={article} />})}</div>
+    
       </div>
       
       <div className="Newsletter">
