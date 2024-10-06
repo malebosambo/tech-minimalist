@@ -23,7 +23,7 @@ export default async function Home() {
       
       <div className="Trending_Posts">
         <h1>Trending Posts</h1><br />
-        <div>{articles.results.map(article => {<BlogArticle article={article} />})}</div>
+        <div><p>No posts</p></div>
     
       </div>
       
