@@ -33,8 +33,7 @@ app.post("/", async (req, res) => {
   const email = req.body.email;
   
   await createPage();
-  
-  res.redirect('/newUser');
+  res.setStatus(201);
 })
 
 app.get("/podcast", async (req, res) => {

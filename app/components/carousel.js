@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-export default function CarouselComp() {
+export default function Carousel() {
 
   const responsive = {
     desktop: {
@@ -17,7 +17,7 @@ export default function CarouselComp() {
       items: 3
     },
     phone: {
-      breakpoint: { max: 767, min: 0 }
+      breakpoint: { max: 767, min: 0 },
       items: 2
     }
   };
@@ -30,6 +30,6 @@ export default function CarouselComp() {
       <div style={{ backgroundColor: "purple" }}>Item 3</div>
       <div style={{ backgroundColor: "seagreen" }}>Item 4</div>
       <div style={{ backgroundColor: "beige" }}>Item 5</div>
-    </Carousel>;
+    </Carousel>
   );
 }
